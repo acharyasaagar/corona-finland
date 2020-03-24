@@ -14,7 +14,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          'So far Finland has been mildly effected by corona virus. However, coronavirus cases are on the rise everyday. This page shows statistics on confirmed, recovered and death cases in Finland due to corona virus. '
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
