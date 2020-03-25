@@ -22,21 +22,20 @@
       :value="content"
       :format-value="formatCount"
       :duration="500"
-    >
-    </animated-number>
+    ></animated-number>
   </v-card>
 </template>
 
 <script>
-import AnimatedNumber from 'animated-number-vue'
+import AnimatedNumber from "animated-number-vue";
 export default {
-  name: 'Card',
+  name: "Card",
   components: {
     AnimatedNumber
   },
   props: {
     title: {
-      default: 'Error',
+      default: "Error",
       type: String
     },
     content: {
@@ -44,7 +43,7 @@ export default {
       type: Number
     },
     bgcolor: {
-      default: '#252550',
+      default: "#252550",
       type: String
     },
     loading: {
@@ -56,8 +55,8 @@ export default {
     formatCount(value) {
       return `<h1 class="text-center font-weight-bold display-2">${Number(
         value
-      ).toFixed(0)}</h1>`
+      ).toFixed(0)}</h1>`;
     }
   }
-}
+};
 </script>

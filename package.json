@@ -1,9 +1,9 @@
 {
-  "name": "y",
+  "name": "coronavirus-finland-stats",
   "version": "1.0.0",
   "description": "Coronavirus statistics of Finland visualization",
-  "author": "acharyasagar",
-  "private": true,
+  "author": "acharyasagar<acharyasaagar@gmail.com>",
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

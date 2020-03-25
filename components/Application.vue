@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="pb-1">
     <v-row class="text-left">
       <v-col cols="12"></v-col>
       <v-col class="mb-4">
@@ -10,17 +10,21 @@
     </v-row>
     <total></total>
     <Table></Table>
+    <Footer></Footer>
   </v-container>
 </template>
 
 <script>
-import Table from './Table'
-import Total from './Total'
+import Table from "./Table";
+import Total from "./Total";
+import Footer from "./Footer";
+
 export default {
-  name: 'Application',
+  name: "Application",
   components: {
     Table,
-    Total
+    Total,
+    Footer
   }
-}
+};
 </script>

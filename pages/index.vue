@@ -7,10 +7,9 @@
 </template>
 
 <script>
-import Application from '../components/Application'
+import Application from "../components/Application";
 export default {
-  name: 'App',
-
+  name: "App",
   components: {
     Application
   },
@@ -18,7 +17,7 @@ export default {
   data: () => ({
     //
   })
-}
+};
 </script>
 
 <style>
@@ -27,13 +26,13 @@ export default {
   font-size: 2.125rem;
   line-height: 2.5rem;
   letter-spacing: 0.00735em !important;
-  font-family: 'Sen', 'sans-serif';
+  font-family: "Sen", "sans-serif";
 }
 .page-title {
   color: #252550;
   font-size: 1.5rem;
   line-height: 2rem;
   letter-spacing: 0.00735em !important;
-  font-family: 'Sen', 'sans-serif';
+  font-family: "Sen", "sans-serif";
 }
 </style>

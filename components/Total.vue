@@ -1,9 +1,7 @@
 <template>
   <v-container class="pa-0">
     <v-col class="mb-3 pa-0" cols="12">
-      <h2 class="page-title font-weight-bold">
-        TOTAL CASES:
-      </h2>
+      <h2 class="page-title font-weight-bold">TOTAL CASES:</h2>
     </v-col>
     <v-col cols="12" class="mb-5">
       <v-row>
@@ -37,10 +35,10 @@
 </template>
 
 <script>
-import axios from 'axios'
-import Card from './Card'
+import axios from "axios";
+import Card from "./Card";
 export default {
-  name: 'Total',
+  name: "Total",
   components: { Card },
   data: () => ({
     allConfirmedCount: null,
@@ -49,25 +47,25 @@ export default {
   }),
   computed: {
     loadingConfirmedCount() {
-      return !this.allConfirmedCount
+      return !this.allConfirmedCount;
     },
     loadingRecoveredCount() {
-      return !this.allRecoveredCount
+      return !this.allRecoveredCount;
     },
     loadingDeathsCount() {
-      return !this.allDeathsCount
+      return !this.allDeathsCount;
     }
   },
   async created() {
     const { data } = await axios.get(
-      'https://w3qa5ydb4l.execute-api.eu-west-1.amazonaws.com/prod/finnishCoronaData'
-    )
-    this.allConfirmed = data.confirmed
-    this.allConfirmedCount = this.allConfirmed.length
-    this.allRecovered = data.recovered
-    this.allRecoveredCount = this.allRecovered.length
-    this.allDeaths = data.deaths
-    this.allDeathsCount = this.allDeaths.length
+      "https://w3qa5ydb4l.execute-api.eu-west-1.amazonaws.com/prod/finnishCoronaData"
+    );
+    this.allConfirmed = data.confirmed;
+    this.allConfirmedCount = this.allConfirmed.length;
+    this.allRecovered = data.recovered;
+    this.allRecoveredCount = this.allRecovered.length;
+    this.allDeaths = data.deaths;
+    this.allDeathsCount = this.allDeaths.length;
   }
-}
+};
 </script>
