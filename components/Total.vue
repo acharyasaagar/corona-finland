@@ -5,7 +5,7 @@
     </v-col>
     <v-col cols="12" class="mb-5">
       <v-row>
-        <v-col offset="2" offset-sm="0" cols="8" sm="3">
+        <v-col offset="2" offset-sm="1" cols="8" md="3">
           <Card
             title="CONFIRMED"
             :content="allConfirmedCount"
@@ -13,7 +13,7 @@
             :loading="loadingConfirmedCount"
           />
         </v-col>
-        <v-col offset="2" offset-sm="1" cols="8" sm="3">
+        <v-col offset="2" offset-sm="1" cols="8" md="3">
           <Card
             title="RECOVERED"
             :content="allRecoveredCount"
@@ -21,7 +21,7 @@
             :loading="loadingRecoveredCount"
           />
         </v-col>
-        <v-col offset="2" offset-sm="1" cols="8" sm="3">
+        <v-col offset="2" offset-sm="1" cols="8" md="3">
           <Card
             title="DEATHS"
             :content="allDeathsCount"

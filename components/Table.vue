@@ -150,7 +150,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .sub-heading,
 .text-primary {
   font-family: "Sen" "Roboto" "sans-serif";
