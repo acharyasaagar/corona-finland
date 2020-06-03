@@ -127,13 +127,9 @@ export default {
     const items = allDistricts.map(district => {
       const filter = d => d.healthCareDistrict === district;
       const confirmed = data.confirmed.filter(filter);
-      const recovered = data.recovered.filter(filter);
-      const deaths = data.deaths.filter(filter);
       return {
         healthCareDistrict: district || "Others",
-        confirmed: confirmed.length,
-        recovered: recovered.length,
-        deaths: deaths.length
+        confirmed: confirmed.length
       };
     });
     this.items = items;
